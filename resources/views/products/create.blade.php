@@ -6,7 +6,7 @@
         <h1 class="mb-6 text-4xl font-bold dark:text-white">Create a New Product</h1>
 
         {{-- Form --}}
-        <form class="bg-slate-800 rounded-lg p-4" action=""method="POST">
+        <form class="bg-slate-800 rounded-lg p-4" action="{{route('products.store')}}"method="POST" enctype="multipart/form-data">
             {{-- Product Name | Text Input --}}
             <div class="mb-5">
                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Name <span class="text-red-500">*</span> </label>
